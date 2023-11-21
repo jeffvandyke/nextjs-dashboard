@@ -8,7 +8,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={`${inter.className} subpixel-antialiased`}>{children}</body>
+      <body className={`${inter.className} subpixel-antialiased overflow-x-clip md:overflow-y-clip`}>{children}</body>
     </html>
   );
 }
