@@ -3,6 +3,7 @@ import Breadcrumbs from '@/app/ui/invoices/breadcrumbs';
 import Form from '@/app/ui/invoices/edit-form';
 import { notFound } from 'next/navigation';
 
+
 export default async function Page({ params }: { params: { id: string } }) {
   const { id } = params;
   const [ customers, invoice ] = await Promise.all([fetchCustomers(), fetchInvoiceById(id)]);
